@@ -891,4 +891,10 @@ footer {
     font-size: calc(1rem + 5vw);
     -webkit-text-stroke: 1px #f2efe8;
   }
+  .interaction-container {
+    display: none;
+  }
+  .interaction-projects {
+    display: none;
+  }
 }
