@@ -1062,18 +1062,23 @@ footer {
   }
   .headline h1,
   .headline-about h1 {
-    font-size: calc(1rem + 4vw);
+    -webkit-text-stroke: 1px #f2efe8;
+    font-size: calc(1rem + 5vw);
   }
   .headline h2,
   .headline-about h2,
   .headline-secondary h2 {
-    font-size: calc(0.8rem + 4vw);
+    font-size: calc(0.8rem + 5vw);
+    -webkit-text-stroke: 1px #f2efe8;
+  }
+  .headline-secondary h2 {
+    font-size: calc(1rem + 5vw);
   }
   .headline-secondary h3 {
-    font-size: calc(0.8rem + 4vw);
+    font-size: calc(0.8rem + 5vw);
   }
   .description p {
-    font-size: 3.3vw;
+    font-size: calc(1rem + 0.7vw);
   }
   .education-element {
     font-size: calc(1rem + 0.8vw);
@@ -1081,10 +1086,11 @@ footer {
   .contact-text p,
   .contact-text span,
   .contact-text a {
-    font-size: calc(1rem + 1.5vw);
+    font-size: calc(1rem + 1vw);
   }
   .projects-wrapper ul li a {
-    font-size: calc(2rem + 2vw);
+    font-size: calc(1rem + 5vw);
+    -webkit-text-stroke: 1px #f2efe8;
   }
 }
 /*# sourceMappingURL=style.css.map */
