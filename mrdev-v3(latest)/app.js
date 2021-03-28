@@ -80,7 +80,7 @@ function interactionHover(e) {
       } 
     else if(item.id === "hover4") {
         // URL einfügen
-        aboutInteraction.style.background = "url(img/) no-repeat center / cover";
+        aboutInteraction.style.background = "url(img/fun.jpg) no-repeat center / cover";
         aboutInteraction.style.opacity = "1"; 
         
     } else {
@@ -93,7 +93,24 @@ function aboutHover(e) {
     if(item === projectAnchor[0]) {
         projectInteraction.style.background = "url(img/ci_banner.jpg) no-repeat center / cover";
         projectInteraction.style.opacity = "1";
-    } else {
+    } 
+    else if(item === projectAnchor[1]) {
+        projectInteraction.style.background = "url(img/) no-repeat center / cover";
+        projectInteraction.style.opacity = "1";
+    }
+    else if(item === projectAnchor[2]) {
+        projectInteraction.style.background = "url(img/) no-repeat center / cover";
+        projectInteraction.style.opacity = "1";
+    }
+    else if(item === projectAnchor[3]) {
+        projectInteraction.style.background = "url(img/portfolio_placeholder.jpg) no-repeat center / cover";
+        projectInteraction.style.opacity = "1";
+    }
+    else if(item === projectAnchor[4]) {
+        projectInteraction.style.background = "url(img/portfolio_placeholder2.jpg) no-repeat center / cover";
+        projectInteraction.style.opacity = "1";
+    }
+    else {
         projectInteraction.style.opacity = "0";
     }
     // Restliche Hovers einbinden

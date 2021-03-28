@@ -676,7 +676,8 @@ footer {
   opacity: 0;
 }
 .projects-wrapper ul {
-  width: 85%;
+  width: 100%;
+  text-align: center;
   margin: auto;
   list-style: none;
   color: transparent;
@@ -685,8 +686,8 @@ footer {
   word-break: break-word;
 }
 .projects-wrapper ul li {
-  width: 100%;
-  display: inline;
+  display: block;
+  margin: 0 0 1rem 0;
 }
 .projects-wrapper ul li a {
   font-size: 4vw;
