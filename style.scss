@@ -399,10 +399,10 @@ a {
 .index-wrapper {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   background-color: #e8e8e8;
 }
 #index-header {
@@ -416,17 +416,14 @@ header,
 }
 #index-header img {
   width: auto;
-  height: 8vw;
-}
-.text-wrapper {
-  transform: translateY(10%);
+  height: calc(4rem + 4vw);
 }
 #index-header h1 {
-  font-size: 2vw;
+  font-size: calc(1rem + 1.5vw);
   margin-bottom: 0;
 }
 #index-header h2 {
-  font-size: 1.2vw;
+  font-size: calc(0.45rem + 1vw);
   font-family: "Lora", serif;
   font-weight: lighter;
 }
@@ -486,7 +483,7 @@ footer {
 }
 .footer-links a {
   color: #2c2a2a;
-  font-size: 2.4vw;
+  font-size: calc(1rem + 1vw);
   position: relative;
   font-weight: 300;
 }
@@ -771,5 +768,115 @@ footer {
     opacity: 1;
     transform: translate3d(-50%, -50%, 0px) scale3d(1, 1, 1) rotateX(0deg)
       rotateY(0deg) rotateZ(0deg) skew(0deg);
+  }
+}
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+  #links {
+    font-size: 11vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #links {
+    display: block;
+    text-align: center;
+  }
+  .link-spacer {
+    height: 0.2vw;
+    width: 100%;
+    background-color: #2c2a2c;
+  }
+  #projects {
+    grid-template-rows: 0.5fr 1fr;
+  }
+  #contact {
+    grid-template-rows: 0.2fr 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 80%;
+  }
+  .education-element {
+    font-size: calc(0.8rem + 0.8vw);
+  }
+  .projects-wrapper ul li a {
+    font-size: calc(2rem + 3vw);
+  }
+  .headline h1,
+  .headline-about h1 {
+    font-size: calc(0.8rem + 4vw);
+  }
+  .headline h2,
+  .headline-about h2,
+  .headline-secondary h2 {
+    font-size: calc(0.5rem + 4vw);
+  }
+  .contact-text p,
+  .contact-text span,
+  .contact-text a {
+    font-size: calc(1rem + 1vw);
+  }
+}
+@media screen and (max-width: 480px) {
+  .index-wrapper {
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+  #links {
+    padding: 6rem 2rem 0 0;
+    font-size: calc(2rem + 5vw);
+  }
+  #links a {
+    color: #2c2a2c;
+    -webkit-text-stroke: none;
+  }
+  .link-spacer {
+    height: 0.25vw;
+  }
+  .text-wrapper {
+    transform: translateY(10%);
+  }
+  #index-header h1 {
+    font-size: calc(0.8rem + 1.5vw);
+  }
+  .footer-links a {
+    font-size: calc(1.5rem + 1vw);
+  }
+  .footer-links a::after {
+    top: 2.3vw;
+    height: 4vw;
+  }
+  #about {
+    grid-template-rows: 3fr 2fr 0.8fr;
+  }
+  .headline,
+  .headline-about {
+    padding-top: 5rem;
+  }
+  .headline h1,
+  .headline-about h1 {
+    font-size: calc(1rem + 4vw);
+  }
+  .headline h2,
+  .headline-about h2,
+  .headline-secondary h2 {
+    font-size: calc(0.8rem + 4vw);
+  }
+  .headline-secondary h3 {
+    font-size: calc(0.8rem + 4vw);
+  }
+  .description p {
+    font-size: 3.3vw;
+  }
+  .education-element {
+    font-size: calc(1rem + 0.8vw);
+  }
+  .contact-text p,
+  .contact-text span,
+  .contact-text a {
+    font-size: calc(1rem + 1.5vw);
+  }
+  .projects-wrapper ul li a {
+    font-size: calc(2rem + 2vw);
   }
 }

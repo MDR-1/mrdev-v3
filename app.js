@@ -67,7 +67,7 @@ function animationFadeIn(){
 function interactionHover(e) {
   const item = e.target;
     if(item.id === "hover1") {
-      aboutInteraction.style.background = "url(img/marcel.jpg) no-repeat center / cover";
+      aboutInteraction.style.background = "url(img/marcel.jpg) no-repeat center / contain";
       aboutInteraction.style.opacity = "1";
     }
     else if(item.id === "hover2") {
@@ -95,11 +95,11 @@ function aboutHover(e) {
         projectInteraction.style.opacity = "1";
     } 
     else if(item === projectAnchor[1]) {
-        projectInteraction.style.background = "url(img/) no-repeat center / cover";
+        projectInteraction.style.background = "url(img/mrdev1.jpg) no-repeat center / cover";
         projectInteraction.style.opacity = "1";
     }
     else if(item === projectAnchor[2]) {
-        projectInteraction.style.background = "url(img/) no-repeat center / cover";
+        projectInteraction.style.background = "url(img/mrdev2.jpg) no-repeat center / cover";
         projectInteraction.style.opacity = "1";
     }
     else if(item === projectAnchor[3]) {
