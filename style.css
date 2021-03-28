@@ -559,7 +559,7 @@ footer {
 .footer-links a::after {
   content: "";
   position: absolute;
-  top: 1vw;
+  top: 0.65vw;
   left: 0;
   height: 1vw;
   width: 100%;
@@ -993,6 +993,10 @@ footer {
   html {
     font-size: 80%;
   }
+  #links {
+    -webkit-transform: translate3d(4.5%, 0, 0) !important;
+            transform: translate3d(4.5%, 0, 0) !important;
+  }
   .education-element {
     font-size: calc(0.8rem + 0.8vw);
   }
@@ -1012,6 +1016,9 @@ footer {
   .contact-text span,
   .contact-text a {
     font-size: calc(1rem + 1vw);
+  }
+  .cursor {
+    display: none;
   }
 }
 
